@@ -6,30 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
  
+<link href="styles.css" rel="styles">
+  
 </head>
 <body>
+
+<!--Questions: Colors, Vehicles, Food, Career -->
 
   <script src="/learning_paths/index.js"></script>
 
   <h1 style="color: white; background-color: brown; text-align: center;"  >Favorite Things</h1>
   <p style="text-align: center;">Please fill out this brief survey about your favorite things!</p>
-  
+ 
+  <h3>What is your first name?</h3>
+    <label style="padding-left: 1rem;"><input type="text" name="name"></label>
+
+  <h3>What is your email?</h3>
+    <label for="email" style="padding-left: 1rem;"><input type="email" name="email"></label>
+
   <h3>What is your favorite color?</h3>
-    
-    <label style="padding-left: 1rem;" for="colors"></label>
-      <select name="colors" id="colors">
-        <option value="blue">Blue</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-        <option value="red">Red</option>
-        <option value="black">Black</option>
-        <option value="I suck">Not a cool color...</option>
-      </select>
+    <label for="color" style="padding-left: 1rem;" ><input type="color" name="color"></label>
     
     <h3>What is your favorite vehicle type?</h3>  
       <label style="padding-left: 1rem;"><input type="radio" name="vehicle" value="Car">Car</label>
       <label><input type="radio" name="vehicle" value="Truck">Truck</label>
       <label><input type="radio" name="vehicle" value="SUV">SUV</label>
 
+    <h3>What are your favorite foods?</h3>
+      <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Pizza">Pizza</label>
+      <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Wings">Wings</label>
+      <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Burger">Burger</label>
+    
+    <h3>Which field is your job in?</h3>
+    <div style="padding-left: 1rem;">
+      <select name="fields" id="field">
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+        <option value="Customer Service">Customer Service</option>
+        <option value="Clown">Clown</option>
+        <option value="Content Creator">Content Creator</option>
+      </select>  
+    </div>
+  <div class="submit"> 
+  <input type="button" name="Submit" value="Submit">
+  </div>
 </body>
 </html>
