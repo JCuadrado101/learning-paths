@@ -13,43 +13,45 @@
 <body>
 
 <!--Questions: Colors, Vehicles, Food, Career -->
+  <form>
+    <script src="/learning_paths/index.js"></script>
 
-  <script src="/learning_paths/index.js"></script>
-
-  <h1>Favorite Things</h1>
-  <p>Please fill out this brief survey about your favorite things!</p>
- 
-  <h3>What is your first name?</h3>
-    <label style="padding-left: 1rem;"><input type="text" name="name"></label>
-
-  <h3>What is your email?</h3>
-    <label for="email" style="padding-left: 1rem;"><input type="email" name="email"></label>
-
-  <h3>What is your favorite color?</h3>
-    <label for="color" style="padding-left: 1rem;" ><input type="color" name="color"></label>
+    <h1>Favorite Things</h1>
     
+    <p>Please fill out this brief survey about your favorite things!</p>
+  
+    <h3>What is your first name?</h3>
+      <label style="padding-left: 1rem;"><input type="text" name="name"></label>
+
+    <h3>What is your email?</h3>
+      <label for="email" style="padding-left: 1rem;"><input type="email" name="email"></label>
+
+    <h3>What is your favorite color?</h3>
+      <label for="color" style="padding-left: 1rem;" ><input type="color" name="color"></label>
+      
     <h3>What is your favorite vehicle type?</h3>  
-      <label style="padding-left: 1rem;"><input type="radio" name="vehicle" value="Car">Car</label>
-      <label><input type="radio" name="vehicle" value="Truck">Truck</label>
-      <label><input type="radio" name="vehicle" value="SUV">SUV</label>
+        <label style="padding-left: 1rem;"><input type="radio" name="vehicle" value="Car">Car</label>
+        <label><input type="radio" name="vehicle" value="Truck">Truck</label>
+        <label><input type="radio" name="vehicle" value="SUV">SUV</label>
 
     <h3>What are your favorite foods?</h3>
-      <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Pizza">Pizza</label>
-      <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Wings">Wings</label>
-      <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Burger">Burger</label>
-    
+        <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Pizza">Pizza</label>
+        <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Wings">Wings</label>
+        <label style="padding-left: 1rem;"><input type="checkbox" name="food" value="Burger">Burger</label>
+      
     <h3>Which field is your job in?</h3>
-    <div style="padding-left: 1rem;">
-      <select name="fields" id="field">
-        <option value="IT">IT</option>
-        <option value="Finance">Finance</option>
-        <option value="Customer Service">Customer Service</option>
-        <option value="Clown">Clown</option>
-        <option value="Content Creator">Content Creator</option>
-      </select>  
-    </div>
-  <div> 
+      <div style="padding-left: 1rem;">
+        <select name="fields" id="field">
+          <option value="IT">IT</option>
+          <option value="Finance">Finance</option>
+          <option value="Customer Service">Customer Service</option>
+          <option value="Clown">Clown</option>
+          <option value="Content Creator">Content Creator</option>
+        </select>  
+      </div>
+
     <button type="submit">Submit</button>
-  </div>
+
+  </form>
 </body>
 </html>
