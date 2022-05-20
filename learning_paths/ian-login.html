@@ -9,8 +9,15 @@
     <title>Login</title>
 
     <style> 
-        html {background-color: #448fff;}
-        *{box-sizing: border-box;}
+        html {
+            background-color: #00398f; 
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+       
+        *{
+            box-sizing: border-box;
+        }
+
         .col-1 {width: 8.33%;}
         .col-2 {width: 16.66%;}
         .col-3 {width: 25%;}
@@ -25,10 +32,10 @@
         .col-12 {width: 100%;}
     
         [class*="col-"] {
-  float: left;
-  padding: 15px;
-  border: 1px solid red;
-}
+        float: left
+        border: 1px solid red;
+        }
+
         .loginbox {
             background-color: white;
             height: 500px;
@@ -44,19 +51,72 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 6%;
-            height: 150px;
-            border-radius: 75px;
+            margin-top: 1rem;
+            height: 180px;
+            border-radius: 90px;
             box-shadow: 2px 2px 2px gray;
         }
+
+        .title {
+            position:absolute;
+            margin: 12rem auto;
+            text-align: center;
+            font-size: 14px;
+            width: inherit;
+        }
+
+        .email {
+            position: absolute;
+            margin: 16rem auto;
+            width: inherit;
+            
+        }
+
+        .password {
+            position: absolute;
+            margin: 19rem auto;
+            width: inherit;
+        }
+    
+        .a {
+            width: 22rem;
+            margin: auto;
+            display: flex;
+            height: 25px;
+            border-radius: 2px;
+            border: 1px solid gray;
+
+        }
+
+        .b {
+            padding-left: 25px;
+            color: red;
+            font-size: 12px;
+        }
+
     </style>
 
 </head>
 
 <body>
 <div class="loginbox">
-    <img  class="logo" src="https://drive.google.com/uc?export=view&id=1Ej7Vr2vKsTxBwQkeGa0yDFca2UNKjXMd" class="logo">
+    <img  class="logo" src="https://drive.google.com/uc?export=view&id=1Ej7Vr2vKsTxBwQkeGa0yDFca2UNKjXMd" >
+   
+    <div class="col-6 title">
+        <h2>Login</h2>
+    </div>
+
+    <div class="col-5 email">
+        <input type="email" id="email" class="a">
+        <label for="email" class="b">Email</label>
+    </div>
+
+    <div class="col-5 password">
+        <input type="password" id="password" class="a">
+        <label for="password" class="b">Password</label>
+    </div>
 </div>
+
 
 
 </body>
