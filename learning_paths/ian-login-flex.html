@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+<style>
+  /* Sanity checker!
+   * {
+        border: 1px solid red;
+    }
+  */ 
+
+    html {
+        background-image: linear-gradient(rgb(36, 36, 36), black);
+        height: 100%;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .loginbox {
+        display: flex;
+        flex-flow: column;
+        height: 40rem;
+        width: 38rem;
+        background-color: white;
+        margin: 15% auto;
+        border-radius: 2px;
+    }
+
+    .logo {
+        order: 1;
+        height: 12rem;
+        margin: 1rem auto;
+        border-radius: 6rem;
+    }
+
+    .login {
+        order: 2;
+        align-items: center;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .email {
+        order: 3;
+        align-self: center;
+    
+    }
+
+    .emailInput {
+        height: 2rem;
+        width: 30rem;
+        border: 0;
+        border-bottom: 2px solid gray;
+    }
+
+    .emailLabel {
+        color: red;
+        font-size: 14px;
+    }
+
+    .password {
+        order: 4;
+        align-self: center;
+        padding-top: 1rem;
+
+    }
+
+    .passwordInput {
+        height: 2rem;
+        width: 30rem;
+        border: 0;
+        border-bottom: 2px solid gray;
+    }
+
+    .passwordLabel {
+        color: red;
+        font-size: 14px;        
+    }
+
+    .linkRow {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .pwReset {
+        order: 1;
+        font-size: 14px;
+    }
+
+    .websiteLink {
+        order: 2;
+        justify-self: flex-end;
+        font-size: 14px;
+    }
+
+    a:link {text-decoration: none;}
+    a:visited {text-decoration: none;}
+    a:hover {text-decoration: none;}
+    a:active {text-decoration: none;}
+</style>
+
+</head>
+
+<body>
+
+    <div class="loginbox">
+        <img src="https://drive.google.com/uc?export=view&id=1Ej7Vr2vKsTxBwQkeGa0yDFca2UNKjXMd" class="logo">
+        <div class="login"><p>Login</p></div>
+        <div class="email"><input type="email" class="emailInput"><br/>
+        <label for="emailInput" class="emailLabel">Email</label>
+        </div>
+        <div class="password"><input type="password" class="passwordInput"><br/>
+        <label for="passwordInput" class="passwordLabel">Password</label>
+        
+        <div class="linkRow">
+            <div class="pwReset"><a href="LINK">Reset Password</a></div>
+            <div class="websiteLink"><a href="https://area17gaming.com/">Area17 Gaming</a></div>
+        </div>    
+    
+    </div>
+
+</body>
